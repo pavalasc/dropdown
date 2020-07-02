@@ -1,0 +1,16 @@
+INSERT INTO developer VALUES (1, "agamita.dandanache@humor.ro", "Agamita", "Dandanache");
+INSERT INTO developer VALUES (2, "Nae.Catavencu@humor.ro", "Nae", "Catavencu");
+INSERT INTO developer VALUES (3, "Zoe.Trahanach@humor.ro", "Zoe", "Trahanache");
+
+INSERT INTO skill VALUES (1, "Java skill", "Java server", 1);
+INSERT INTO skill VALUES (2, "Kotlin skill", "Java & Kotlin", 1);
+INSERT INTO skill VALUES (3, "SWING skill", "Java & swing", 1);
+INSERT INTO skill VALUES (4, "WEB development skill", "Java web", 1);
+
+INSERT INTO skill VALUES (5, "JavaScript skill", "JavaScript pure", 2);
+INSERT INTO skill VALUES (6, "Thymeleaf skill", "JavaScript & Thymeleaf", 2);
+INSERT INTO skill VALUES (7, "Angular skill", "JavaScript Angular", 2);
+
+INSERT INTO skill VALUES (8, "Amber skill", "JavaScript amber", 3);
+INSERT INTO skill VALUES (9, "Angular skill", "JavaScript angular", 3);
+INSERT INTO skill VALUES (10, "React skill", "JavaScript react", 3);

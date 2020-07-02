@@ -8,6 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.sun.istack.NotNull;
 
 @Entity
@@ -21,6 +23,7 @@ public class Skill {
     @ManyToOne(optional=false, fetch = FetchType.LAZY)
     @JoinColumn(name="developer_id", nullable=false)
     @NotNull
+    @JsonBackReference
     private Developer developer;
 
     public Developer getDeveloper() {

@@ -11,6 +11,7 @@ import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.sun.istack.NotNull;
 
 @Entity
@@ -26,6 +27,7 @@ public class Developer {
 	//@ManyToMany
 	@OneToMany(mappedBy="developer")
 	//@NotNull
+    @JsonManagedReference
 	private List<Skill> skills = new ArrayList<>();
 
 	public Developer() {
