@@ -62,29 +62,6 @@ public class DevelopersController {
 		}
     }
 	
-//	@RequestMapping("/skills/{developerId}")
-//	public RestResponse getSkillsForDev(@PathVariable String developerId) throws NumberFormatException {
-//		//instantiate the response object
-//		RestResponse response = new RestResponse();
-//
-//		if (developerId != null) {
-//			Long devId = Long.parseLong(developerId);
-//			boolean exists = devRepository.existsById(devId);
-//			if (exists) {
-//				Developer developer = devRepository.findById(devId).get();
-//				List<Skill> skills = developer.getSkills();
-//				response.setResponseStatus(RestResponse.OK);
-//				response.setResponse(skills);
-//			}
-//		} else {
-//			response.setResponseStatus(RestResponse.NOT_FOUND);
-//			response.setResponse("");
-//
-//		}
-//
-//		return response;
-//	}
-	
 	
 
 	@RequestMapping("/developer/{id}")
